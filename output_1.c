@@ -6,7 +6,7 @@
 /*   By: madcat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 15:52:50 by madcat            #+#    #+#             */
-/*   Updated: 2021/10/26 22:57:52 by madcat           ###   ########.fr       */
+/*   Updated: 2021/10/26 23:13:18 by madcat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,10 +84,10 @@ int	addr_print(unsigned long addr)
 	short			digit[16];
 	int			i;
 
-	if (addr == 0)
-		return (write(1, "(nil)", 5));
 	ft_putchar('0');
 	ft_putchar('x');
+	if (addr == 0)
+		return (char_print('0') + 2);
 	i = 0;
 	while (addr)
 	{
