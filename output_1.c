@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   output_1.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: madcat <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: seulee <seulee@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/26 15:52:50 by madcat            #+#    #+#             */
-/*   Updated: 2021/10/26 23:13:18 by madcat           ###   ########.fr       */
+/*   Created: 2021/10/26 23:27:08 by seulee            #+#    #+#             */
+/*   Updated: 2021/10/26 23:27:10 by seulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	dec_print(int number)
 {
-	int	ret;
-	int	sign;
+	int		ret;
+	int		sign;
 	short	digit[10];
 
 	ret = 0;
@@ -42,7 +42,7 @@ int	dec_print(int number)
 
 int	unsigned_dec_print(unsigned int number)
 {
-	int	ret;
+	int		ret;
 	short	digit[10];
 
 	if (number == 0)
@@ -63,7 +63,7 @@ int	unsigned_dec_print(unsigned int number)
 
 int	hex_print(unsigned int number, int flag)
 {
-	int	ret;
+	int		ret;
 	short	digit[10];
 
 	if (number == 0)
@@ -81,8 +81,8 @@ int	hex_print(unsigned int number, int flag)
 
 int	addr_print(unsigned long addr)
 {
-	short			digit[16];
-	int			i;
+	short	digit[16];
+	int		i;
 
 	ft_putchar('0');
 	ft_putchar('x');
@@ -96,12 +96,12 @@ int	addr_print(unsigned long addr)
 		i++;
 	}
 	num_array_print(digit, 1, i);
-	return (i+2);
+	return (i + 2);
 }
 
 void	num_array_print(short number[], int base, int digit)
 {
-	char *letters[2];
+	char	*letters[2];
 
 	letters[0] = "0123456789ABCDEF";
 	letters[1] = "0123456789abcdef";

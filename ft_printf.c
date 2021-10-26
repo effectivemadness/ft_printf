@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: madcat <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: seulee <seulee@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/26 15:52:35 by madcat            #+#    #+#             */
-/*   Updated: 2021/10/26 22:19:19 by madcat           ###   ########.fr       */
+/*   Created: 2021/10/26 23:26:49 by seulee            #+#    #+#             */
+/*   Updated: 2021/10/26 23:26:51 by seulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf(const char * format, ...)
+int	ft_printf(const char *format, ...)
 {
-	va_list ap;
-	int ret;
+	va_list	ap;
+	int		ret;
 
 	ret = 0;
 	va_start(ap, format);
