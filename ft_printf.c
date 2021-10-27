@@ -6,7 +6,7 @@
 /*   By: seulee <seulee@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/26 23:26:49 by seulee            #+#    #+#             */
-/*   Updated: 2021/10/26 23:26:51 by seulee           ###   ########.fr       */
+/*   Updated: 2021/10/27 11:21:37 by seulee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int	ft_printf(const char *format, ...)
 			ret += char_print(*format);
 		format++;
 	}
+	va_end(ap);
 	return (ret);
 }
 
